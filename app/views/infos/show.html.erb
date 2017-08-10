@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @info.name %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @info.age %>
+</p>
+
+<p>
+  <strong>Birthdate:</strong>
+  <%= @info.birthdate %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @info.address %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @info.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @info.zip %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @info.email %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= image_tag(@info.picture_url, width: 600) if @idea.picture.present? %>
+</p>
+
+<%= link_to 'Edit', edit_info_path(@info) %> |
+<%= link_to 'Back', infos_path %>
